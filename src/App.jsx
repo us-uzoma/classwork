@@ -1,5 +1,4 @@
 import './App.css'
-import banner from "./assets/banner.png";
 import about from "./assets/about.png";
 
 function App() {
