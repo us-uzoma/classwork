@@ -1,0 +1,562 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* -----------------------------------Universal----------------------------------- */
+:root{
+    font-size: 62.5%;
+    font-family: 'poppins' sans-serif;
+    
+}
+.gym-image-holder{
+    background-image: url(./banner.png);
+    background:linear-gradient(rgba (f, f, f, 0.5));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+/* -----------------------------------Navigation----------------------------------- */
+.logo a{
+    font-size: 4.8rem;
+    margin: 3rem;
+    /* padding: 3rem 0; */
+    color: aliceblue;
+    text-decoration: none;
+}
+.logo a span{
+    color: orange;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar-one{
+    display: flex;
+    font-size: 2rem;
+    list-style: none;
+}
+.nav-bar-one li a{
+    padding: 3px 8px;
+    text-decoration: none;
+    margin-right: 2rem;
+    color: aliceblue;
+    transition: all 0.3s ease;
+}
+.nav-bar-one li a:hover{
+    color: orange;
+    border-bottom: 3px solid aliceblue;
+}
+/* .register{
+    background: orange;
+    color: orange;
+}
+.register:hover{
+    border: 1px solid orange;
+    background: transparent;
+} */
+.test{
+    background-color: red;
+    height:20rem;
+ }
+ /* -----------------------------------Hero Section----------------------------------- */
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15rem;
+}
+ .hero .hero-h1{
+    font-size: 6.2rem;
+    font-weight: 700;
+    color: #fff;
+ }
+ .hero .hero-h1 span{
+    color:red;
+ }
+.hero p{
+    font-size: 1.8rem;
+}
+.hero a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 3rem;
+    background-color: red;
+}
+.hero a:hover{
+    background: transparent;
+    border:1px solid #fff;
+    color: #ff1515;
+    box-shadow: 10px 10px 10px #000;
+}
+
+ /* ----------------------------------- About Us ----------------------------------- */
+
+ .about{
+    display: flex;
+    /* margin-top: 5rem; */
+    margin: 10rem 3rem; 
+    /* flex: 1; */
+    justify-content: space-between;
+    gap: 10rem;
+
+ }
+ .about .about-text h4{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    color: orange;
+
+ }
+ .about .about-text h2{
+    font-size: 4.2rem;
+    margin-bottom: 3rem;
+    /* margin-right: 2rem; */
+
+ }
+.about .about-text p{
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+
+}
+.about .about-text ul li{
+    list-style: none;
+    font-size: 1.6rem;
+    margin-bottom: 1.8rem;
+}
+.btn{
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem 1.8rem;
+    background: orangered;
+    /* text-align: center; */
+    margin-top: 3rem;
+    display: inline-block;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: darkred;
+}
+.about .about-image img{
+    width: 100%;
+    height: 450px;
+    /* padding-right: 100px; */
+    margin-right: 150px;
+    border-radius: 30%;
+    
+}
+
+ /* ----------------------------------- Testimonies ----------------------------------- */
+.testimonials{
+    margin-bottom: 100px;
+    padding: 80px 7.3%;
+    text-align: center;
+    background-color: #f5f5f5;
+
+}
+testimonials h4{
+    font-size: 28px;
+    color: blue;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+.testimonials h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+ /* ----------------------------------- Flexbox ----------------------------------- */
+
+.testimonial-container{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    gap: 16px;
+
+}
+ /* ----------------------------------- Card ----------------------------------- */
+.testimonial-container .card{
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+
+}
+.testimonial-container .card:hover{
+    transform: scale(1.07);
+    box-shadow: 0.15px 15px 35px rgba(0, 0, 0, .25);
+    cursor: pointer;
+
+}
+.testimonial-container .card img{
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+    padding-bottom: 20px;
+    border-radius: 5%;
+
+}
+.testimonial-container .card h3{
+    margin-bottom: 15px;
+}
+.testimonial-container .card p{
+    text-align: left;
+    color: #555;
+    line-height: 1.3;
+}
+/* ----------------------------------CTA----------------------------------------- */
+.cta{
+    padding: 80px 10%;
+    background-color: #007bff;
+    text-align: center;
+    color: #fff;
+    /* margin-bottom: 100px; */
+
+}
+/* CONTENT */
+.cta-content{
+    max-width: 700px;
+    margin: auto;
+}
+.cta-content h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+
+}
+.cta-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+/* BUTTON */
+.cta-content .cta-button{
+    display: inline-block;
+    font-size: 16px;
+    background-color: #fff;
+    color: #007bff;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: 0.3s; 
+}
+/* HOVER */
+.cta-content .cta-button:hover{
+    background-color: #222;
+    color: #fff;
+}
+/* FOOTER */
+.footer{
+    background-color: #111;
+    color: #fff;
+    padding: 60px 10% 20px;
+
+}
+/* FOOTER CONTAINER */
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+/* FOOTER BOX */
+.footer-box{
+    flex: 1;
+
+}
+.footer-box h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.footer-box h3{
+    /* font-size: ; */
+    margin-bottom: 20px;
+}
+.footer-box p{
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.7;
+
+}
+/* FOOTER LINKS */
+.footer-box a{
+    font-size: 14px;
+    display: block;
+    color: #ccc;
+    margin-bottom: 12px;
+    text-decoration: none;
+}
+.footer-box a:hover{
+    color: #fff;
+}
+/* COPYRIGHT */
+.copyright{
+    border-top: 1px olid #333;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+.copyright p{
+    color: #aaa;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+/* HEADER */
+
+@media( max-width: 768px){
+    section header{
+        justify-content: center;
+        height: 60px;
+    }
+    .nav-links-text{
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+}
+
+@media (max-width: 480px){
+    section header{
+        height: auto;
+        min-height: 60px;
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+    .nav-links-text{
+        padding: 5px 8px;
+    }
+    header .nav-links-text a{
+        font-size: 14px;
+    }
+}
+
+/* HERO SECTION */
+@media(max-width:: 768px){
+    .hero{
+        height: 80vh;
+    }
+    .hero-content{
+        width: 90%;
+        min-width: 0;
+    }
+    .hero-content h1{
+        font-size: 32px;
+    }
+    .hero-content p{
+        font-size: 18px;
+    }
+    .hero-content button{
+        padding: 12px 28px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px){
+    .hero{
+        height: 75vh;
+    }
+    .hero-content{
+        width: 90%;
+        min-width: 0;
+    }
+    .hero-content h1{
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .hero-content p{
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .hero-content button{
+        padding: 10px 22px;
+        font-size: 15px;
+    }
+}
+
+/* ABOUT US */
+
+@media (max-width: 768px){
+    .about{
+        flex-direction: column;
+        padding: 60px 7%;
+        gap: 35px;
+
+    }
+    .about-text{
+        width: 100%;
+    }
+    .about-text h2{
+        font-size: 36px;
+    }
+    .about-text p{
+        font-size: 17px;
+    }
+    .about-image{
+        width: 80%;
+    }
+}
+@media(max-width: 480px){
+    .about{
+        padding: 50px 6%;
+        gap: 25px;
+
+    }
+    .about-text h4{
+        font-size: 14px;
+    }
+    .about-text h2{
+        font-size: 30px;
+    }
+    .about-text p{
+        font-size: 16px;
+        line-height: 1.6;
+
+    }
+    .about-text ul{
+        padding-bottom: 20px;
+    }
+    .about-image{
+        width: 100%;
+    }
+    .about-text .btn{
+        padding: 12px 25px;
+    }
+}
+
+/* TESTIMONIAL SECTION */
+
+@media(max-width: 768px){
+    .testimonials{
+        padding: 60px 6%;
+    }
+    .testimonials h2{
+        font-size: 32px;
+        margin-bottom: 35px;
+    }
+    .testimonial-container{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .testimonial-container .card{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .testimonial-container .card img{
+        height: 390px;
+    }
+}
+@media(max-width: 480px){
+    .testimonials{
+        padding: 50px 5%;
+    }
+    .testimonials h4{
+        font-size: 14px;
+    }
+    .testimonials h2{
+        font-size: 27px;
+        margin-bottom: 30px;
+    }
+    .testimonial-container{
+        gap: 20px;
+    }
+    .testimonial-container .card{
+        padding: 20px;
+    }
+    .testimonial-container .card img{
+        height: 250px;
+    }
+    .testimonial-container .card h3{
+        font-size: 20px;
+    }
+    .testimonial-container .card p{
+        font-size: 15px;
+    }
+}
+
+/* CTA */
+@media(max-width: 768px){
+    .cta{
+        padding: 60px 8%;
+    }
+    .cta-content h2{
+        font-size: 32px;
+    }
+    .cta-content p{
+        font-size: 18px;
+    }
+}
+@media(max-width: 480px){
+    .cta{
+        padding: 50px 6%;
+    }
+    .cta-content h2{
+        font-size: 27px;
+        line-height: 1.3;
+    }
+    .cta-content p{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .cta-content .cta-button{
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+}
+
+/* FOOTER */
+
+@media (max-width: 768px){
+    .footer{
+        padding: 50px 7% 20px;
+    }
+    .footer-container{
+        flex-direction: column;
+        gap: 35px;
+    }
+    .footer-box{
+        width: 100%;
+    }
+    .footer-box h2{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px){
+    .footer{
+        padding: 40px 6% 20px;
+    }
+    .footer-container{
+        gap: 25px;
+    }
+    .footer-box h2{
+        font-size: 23px;
+    }
+    .footer-box h3{
+        font-size: 18px;
+    }
+    .footer-box p, .footer-box a{
+        font-size: 14px;
+    }
+    .copyright{
+        margin-top: 30px;
+    }
+    .copyright p{
+        font-size: 12px;
+    }
+    
+}
