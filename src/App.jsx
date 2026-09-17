@@ -1,4 +1,6 @@
 import './App.css'
+import banner from "./assets/banner.png";
+import about from "./assets/about.png";
 
 function App() {
   return (
@@ -40,7 +42,7 @@ function App() {
             <a href="#" className="btn">Learn More</a>
         </div>
         <div className="about-image">
-            <img src="./about.png" alt="about us"/>
+            <img src={about} alt={ftfuj}/>
         </div>
      </section>
 
