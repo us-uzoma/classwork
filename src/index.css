@@ -346,7 +346,7 @@ testimonials h4{
 }
 
 /* HERO SECTION */
-@media(max-width:: 768px){
+@media(max-width: 768px){
     .hero{
         height: 80vh;
     }
